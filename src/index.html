@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Truculenta:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="#" />
+		<title>Bryan Cam - Voice Actor</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="header">
+				<a href="index.html">
+					<h1>Bryan Cam</h1>
+				</a>
+				<nav id="navigation">
+					<ul class="nav_menu">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="hamburger">
+					<button class="menu_bar" onclick="toggleMenu()">
+						<i class="material-icons" id="menu_icon">menu</i>
+					</button>
+				</div>
+			</div>
+		</header>
+		<div class="demos">
+			<a id="home"></a>
+			<div class="bryan_img">
+				<img
+					src="../images/Commercial_and_Animation_Younger.JPG"
+					alt="Headshot of Bryan Cam"
+					class="headshot"
+				/>
+			</div>
+			<div class="demo_audio">
+				<h3>Listen & Download</h3>
+				<div id="animation_demo">
+					<p>Animation Demo</p>
+					<div class="audio_controls">
+						<button onclick="playAnimation()">
+							<i class="material-icons" id="play_animation">
+								play_arrow
+							</i>
+						</button>
+						<div class="animation_audio_player">
+							<div class="animation_duration_bar">
+								<div
+									class="progress"
+									id="animation_duration"
+								></div>
+							</div>
+						</div>
+						<a
+							href="../audio/Bryan_Cam_-_Animation_Demo.mp3"
+							download
+						>
+							<button>
+								<i class="material-icons" id="download">
+									file_download
+								</i>
+							</button>
+						</a>
+						<audio
+							id="animation_audio"
+							src="../audio/Bryan_Cam_-_Animation_Demo.mp3"
+						></audio>
+					</div>
+				</div>
+				<div id="commercial_demo">
+					<p>Commercial Demo</p>
+					<div class="audio_controls">
+						<button onclick="playCommercial()">
+							<i class="material-icons" id="play_commercial">
+								play_arrow
+							</i>
+						</button>
+						<div class="commercial_audio_player">
+							<div class="commercial_duration_bar">
+								<div
+									class="progress"
+									id="commercial_duration"
+								></div>
+							</div>
+						</div>
+						<a
+							href="../audio/Bryan_Cam_-_Commercial_Demo.mp3"
+							download
+						>
+							<button>
+								<i class="material-icons" id="download">
+									file_download
+								</i>
+							</button>
+						</a>
+						<audio
+							id="commercial_audio"
+							src="../audio/Bryan_Cam_-_Commercial_Demo.mp3"
+						></audio>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about">
+			<a id="about"></a>
+			<h1>About Bryan Cam</h1>
+			<div>
+				<p>
+					Bryan is an LA-based voice actor. He was first intrigued
+					about voice acting at a young age and grew up watching shows
+					like Ben 10 and Teen Titans. When he found out the
+					characters of Ben and Raven were voiced by the same person
+					he was mind boggled.
+				</p>
+			</div>
+			<div>
+				<p>
+					Inspired, Bryan would often try out a variety of characters
+					and voices to match the different situations he found
+					himself in. These voices form the repertoire he uses to this
+					day.
+				</p>
+			</div>
+			<div>
+				<p>
+					He started his commercial voice acting training in 2015 at
+					Big House Casting with Kate McClanaghan. After taking a
+					couple of classes he was ready to produce his demo with
+					Susan Playo. With the commercial demo completed, Bryan had
+					to decide whether he wanted to go straight into pay to play
+					sites or whether he should still take classes for animation
+					and character development.
+				</p>
+			</div>
+			<div>
+				<p>
+					Bryan took some time exploring the voiceover industry,
+					taking advantage of any and all opportunities to develop
+					himself. He began taking animation and character voice
+					acting classes in 2018. He first started off with Tony
+					Oliver's Intermediate and Advanced workshop. After falling
+					in love with the process of discovering characters in voice
+					acting, he moved on to classes with Richard Horvitz, Crispin
+					Freeman, Julie Kliewer, Roy Yokelson, and David Rosenthal.
+				</p>
+			</div>
+			<div>
+				<p>
+					His mentors and coaches praise him for his "warm and
+					smiling" commercial takes. His animation coaches recognize a
+					vocal range which accommodates a wide variety of characters-
+					beyond his years! Bryan's voice moves easily from young and
+					sweet to sassy, brash and heroic.
+				</p>
+			</div>
+		</div>
+		<div class="contact">
+			<div class="contact_info">
+				<div class="bryan_contact">
+					<div class="bryan_info">
+						<p>
+							<a href="mailto:bryancamva@gmail.com">
+								<i class="material-icons" id="icons">email</i>
+							</a>
+							|
+							<a href="mailto:bryancamva@gmail.com">
+								bryancamva@gmail.com
+							</a>
+						</p>
+						<p>
+							<a href="tel:+1626-500-8865">
+								<i class="material-icons" id="icons">phone</i>
+							</a>
+							|
+							<a href="tel:+1626-500-8865">(626) 500 - 8865</a>
+						</p>	
+					</div>
+					<div class="blank"></div>
+				</div>
+				<div class="agent_contact">
+					<div class="agent_info">
+						<a
+							href="https://www.benzmodels.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<p>Benz Model and Talent</p>
+						</a>
+						<p>
+							<i class="material-icons" id="icons">person</i>
+							| Shawn Scheller
+						</p>
+						<p>
+							<a href="tel:+1813-242-4400">
+								<i class="material-icons" id="icons">phone</i>
+							</a>
+							|
+							<a href="tel:+1813-242-4400">(813) 242 - 4400</a>
+						</p>
+						<p>
+							<a href="mailto:shawn@benztalent.com">
+								<i class="material-icons" id="icons">email</i>
+							</a>
+							|
+							<a href="mailto:shawn@benztalent.com">
+								shawn@benztalent.com
+							</a>
+						</p>
+					</div>
+					<div class="agent_logo">
+						<a
+							href="https://www.benzmodels.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img class="agent_img"
+								src="../images/BENZ_LOGO.JPG.gif"
+								alt="Benz Model and Talent Logo"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="contact_form">
+				<a id="contact"></a>
+				<form action="https://formsubmit.co/bryancamva@gmail.com" method="POST">
+					<h1>Contact</h1>
+					<div class="contact_field">
+						<label for="name">Name</label>
+						<br />
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Name"
+						/>
+						<br />
+						<label for="email">Email</label>
+						<br />
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email"
+						/>
+						<br />
+						<label for="message">Message</label>
+						<br />
+						<textarea
+							name="message_text"
+							id="message"
+							placeholder="Message to Bryan here..."
+							rows="16"
+						></textarea>
+						<br />
+					</div>
+					<div class="submit_btn">
+						<button type="submit" id="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="fog_of_war"></div>
+		<footer>
+			<p>
+				&#169; 2021 Bryan Cam | This website was created by Ellis Chang
+			</p>
+		</footer>
+	</body>
+	<script src="../scripts/script.js"></script>
+</html>

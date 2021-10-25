@@ -45,6 +45,11 @@ header::after {
 	font-size: 3rem;
 	margin: 2.5rem 0 2.5rem 2rem;
 	height: 4rem;
+	vertical-align: middle;
+}
+
+.header span {
+	font-size: 1.9rem;
 }
 
 #navigation {
@@ -101,6 +106,12 @@ header::after {
 
 .hamburger i {
 	font-size: 3rem;
+}
+
+#menu_icon {
+	width: 100%;
+	height: auto;
+	max-width: 48px;
 }
 
 #menu_icon:hover {
@@ -161,6 +172,7 @@ header::after {
 	width: 20rem;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
 #commercial_demo p {
@@ -168,6 +180,7 @@ header::after {
 	width: 20rem;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
 .audio_controls {
@@ -354,9 +367,46 @@ footer::after {
 }
 
 /* add sliding animation to the website here */
+@media only screen and (max-width: 447px) {
+	header {
+		height: 10.625rem;
+	}
+
+	#navigation .responsive {
+		margin-top: 0;
+	}
+
+	.contact_info {
+		font-size: 1.45rem;
+	}
+}
+
+@media only screen and (min-width: 447px) and (max-width: 541px) {
+	#navigation .responsive {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (min-width: 447px) and (max-width: 600px) {
+	header {
+		height: 7.813rem;
+	}
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.header h1 {
+		float: left;
+		font-size: 2rem;
+		margin: 2.5rem 0 2.5rem 2rem;
+		width: 50%;
+		height: auto;
+	}
+
+	.header span {
+		font-size: 1.75rem;
+	}
+
 	.nav_menu {
 		display: none;
 	}
@@ -366,6 +416,7 @@ footer::after {
 		position: absolute;
 		float: right;
 		top: 2.5rem;
+		bottom: 2.5rem;
 		right: 2rem;
 		cursor: pointer;
 	}
@@ -398,8 +449,8 @@ footer::after {
 		order: 2;
 	}
 
-	.agent_img {
-		width: 100%;
+	.agent_logo {
+		display: none;
 	}
 
 	.blank {

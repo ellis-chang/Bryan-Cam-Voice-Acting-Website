@@ -286,9 +286,12 @@
 		<div class="fog_of_war"></div>
 		<footer>
 			<p>
-				&#169; 2022 Bryan Cam | This website was created by Ellis Chang
+				&#169; <span id="year"></span> Bryan Cam | This website was created by Ellis Chang
 			</p>
 		</footer>
 	</body>
 	<script src="scripts/script.js"></script>
+	<script>
+		document.getElementById("year").innerHTML = new Date().getFullYear();
+	</script>
 </html>
